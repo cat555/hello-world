@@ -1,10 +1,14 @@
 <?php
 declare(strict_types = 1);
 
+// filter is kept out of library because it is rarely used
 require '../include/library.php';
 require '../include/filter.php';
 
+// login user
 userLogin();
+
+// connect to the database
 connectDatabase();
 
 $message = '';
