@@ -17,14 +17,17 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') === false ||
 //    finish('/');
 }
 
+// retrieve username and password
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
 settype($username, 'string');
 settype($password, 'string');
 
+// error message
 $message = '';
 
+// process login
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     connectDatabase();
 
