@@ -3,6 +3,11 @@
 
 function hello1($message)
 {
-    cout << 'Hello '. $message. '<br />';
+    echo 'Hello '. $message. '<br />';
+}
+
+function hello2()
+{
+    echo 'I am function hello2()<br />';
 }
 
