@@ -6,8 +6,8 @@ require '../include/library.php';
 
 //userLogin();
 
-// html header
-require('../include/header.php');
+// modified html header
+require('../include/header_modified.php');
 ?>
 <form>
 <div class="title"><img class="menu4" src="res/help.png" alt="" />Help</div><p>
