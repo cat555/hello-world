@@ -12,11 +12,13 @@ if (isset($_SESSION['_UID'])) {
     $_SESSION['_UID'] = 0;
 }
 
+// check if user is using android
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') === false ||
   strpos($_SERVER['HTTP_USER_AGENT'], '; wv)') === false) {
     finish('/');
 }
 
+// retreive username and password
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
