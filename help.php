@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 
+// include the library
 require '../include/library.php';
 
 //userLogin();
