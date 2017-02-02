@@ -1,8 +1,10 @@
 <?php
 declare(strict_types = 1);
 
+// dependencies
 require '../include/library.php';
 
+// login user
 userLogin();
 
 require('../include/header.php');
@@ -14,7 +16,7 @@ require('../include/header.php');
 <?php
 if (in_array('photo', $_SESSION['_NOTIFICATIONS'])) {
 ?>
-<p>You must choose a profile photo before continuing.</p>
+<h1>Choose A Profile Photo</h1>
 <?
 }
 ?>

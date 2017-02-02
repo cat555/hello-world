@@ -1,0 +1,4 @@
+documentation for profile_photo.php
+
+this script manages the user's profile photo
+
