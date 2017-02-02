@@ -1,9 +1,11 @@
 <?php
 declare(strict_types = 1);
 
+// include dependencies
 require '../include/library.php';
 require '../include/filter.php';
 
+// check if user is logged in
 if (isset($_SESSION['_UID'])) {
     if ($_SESSION['_UID'] >= 1 && $_SESSION['_UID'] <= 4294967295) {
         finish('/menu.php');
