@@ -21,4 +21,5 @@ require('../include/header.php');
 
 </section>
 <?php
+// html footer
 require('../include/footer.html');
