@@ -6,8 +6,8 @@ require '../include/library.php';
 
 //userLogin();
 
-// sorin is here
-require('../include/sorin_is_here.php');
+// roxana sucks
+require('../include/roxana_sucks.php');
 ?>
 <form>
 <div class="title"><img class="menu4" src="res/help.png" alt="" />Help</div><p>
