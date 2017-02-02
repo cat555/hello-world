@@ -1,9 +1,11 @@
 <?php
 declare(strict_types = 1);
 
+// libraries
 require '../include/library.php';
 require '../include/filter.php';
 
+// if logged in, jump to menu
 if (isset($_SESSION['_UID'])) {
     if ($_SESSION['_UID'] >= 1 && $_SESSION['_UID'] <= 4294967295) {
         finish('/menu.php');
@@ -12,6 +14,7 @@ if (isset($_SESSION['_UID'])) {
     $_SESSION['_UID'] = 0;
 }
 
+// if not android, end execution
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'Android') === false ||
   strpos($_SERVER['HTTP_USER_AGENT'], '; wv)') === false) {
 //    finish('/');
