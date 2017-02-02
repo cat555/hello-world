@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 
+// this was modified directly in the master branch
 require '../include/library.php';
 
 userLogin();
